@@ -1,6 +1,7 @@
 package com.example.mallit
 
 import android.os.Bundle
+import android.view.View
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -13,6 +14,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.mallit.ui.theme.MallItTheme
 
 class MainActivity : ComponentActivity() {
+    val word: String = ""
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -24,6 +27,10 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
+}
+
+fun checkMall(view: View){
+
 }
 
 @Composable
